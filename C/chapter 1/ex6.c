@@ -6,7 +6,7 @@ int main() {
     n1,
     n2;
 
-    printf("Primeiro Número: ");
+    printf("Primeiro Numero: ");
     scanf("%d", &n1);
     printf("Segunda Número: ");
     scanf("%d", &n2);
