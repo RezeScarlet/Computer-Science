@@ -15,6 +15,6 @@ int main() {
     perimetro = 2*altura + 2*largura,
     area = altura*largura;
 
-    printf("Perímetro: %d \nArea: %d", perimetro, area);
+    printf("Perimetro: %d \nArea: %d", perimetro, area);
     return 0;
 }

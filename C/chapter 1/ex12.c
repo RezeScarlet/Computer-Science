@@ -3,7 +3,7 @@
 
 int main() {
     float n;
-    printf("Número decimal: ");
+    printf("Numero decimal: ");
     scanf("%f", &n);
 
     printf("%f\n", n);

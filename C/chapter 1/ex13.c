@@ -6,9 +6,9 @@ int main() {
     n1,
     n2;
 
-    printf("Primeiro Número: ");
+    printf("Primeiro Numero: ");
     scanf("%f", &n1);
-    printf("Segunda Número: ");
+    printf("Segunda Numero: ");
     scanf("%f", &n2);
     
     float 

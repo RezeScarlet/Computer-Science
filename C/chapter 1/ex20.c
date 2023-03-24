@@ -7,10 +7,10 @@ int main() {
     n2,
     resultado;
 
-    printf("Primeiro número: ");
+    printf("Primeiro numero: ");
     scanf("%d", &n1);
 
-    printf("Segundo número: ");
+    printf("Segundo numero: ");
     scanf("%d", &n2);
 
     resultado = (n1+n2)/2;

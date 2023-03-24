@@ -6,6 +6,6 @@ int main() {
     printf("Valor do produto: ");
     scanf("%f", &valorInicial);
     valorFinal = valorInicial*0.91;
-    printf("Preço de venda com 9%% de desconto: %.2f", valorFinal);
+    printf("Preco de venda com 9%% de desconto: %.2f", valorFinal);
     return 0;
 }

@@ -11,6 +11,6 @@ int main() {
     perimetro = lado*4,
     area = lado*lado;
 
-    printf("Perímetro: %.2f\nÁrea: %.2f", perimetro, area);
+    printf("Perimetro: %.2f\nArea: %.2f", perimetro, area);
     return 0;
 }

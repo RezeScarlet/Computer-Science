@@ -4,7 +4,7 @@
 int main() {
     int n1;
     
-    printf("Forneça um número inteiro: ");
+    printf("Forneca um numero inteiro: ");
     scanf("%d", &n1);
 
     int
