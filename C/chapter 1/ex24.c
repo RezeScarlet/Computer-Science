@@ -4,6 +4,5 @@
 int main() {
   printf("AOBA");
   return 0;
+  scanf("");
 }
-
-
