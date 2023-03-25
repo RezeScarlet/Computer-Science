@@ -15,6 +15,6 @@ int main() {
 
     resultado = (n1+n2)/2;
 
-    printf("Média aritmetica: %d", resultado);
+    printf("Media aritmetica: %d", resultado);
     return 0;
 }

@@ -6,7 +6,7 @@ int main() {
     raio,
     𝝅 = 3.141592;
 
-    printf("Raio do círculo: ");
+    printf("Raio do circulo: ");
     scanf("%f", &raio);
 
     float

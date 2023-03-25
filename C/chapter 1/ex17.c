@@ -7,11 +7,11 @@ int main() {
     baseMenor,
     altura;
 
-    printf("Base maior do trapézio: ");
+    printf("Base maior do trapezio: ");
     scanf("%f", &baseMaior);
-    printf("Base menor do trapézio: ");
+    printf("Base menor do trapezio: ");
     scanf("%f", &baseMenor);
-    printf("altura do trapézio: ");
+    printf("altura do trapezio: ");
     scanf("%f", &altura);
 
     float
