@@ -17,6 +17,6 @@ int main() {
 
 
 
-    printf("Diametro: %.2f\nCircunferência: %.2f\nArea: %.2f", diametro, circunferencia, area);
+    printf("Diametro = %.2f\nCircunferencia = %.2f\nArea = %.2f", diametro, circunferencia, area);
     return 0;
 }

@@ -13,6 +13,6 @@ int main() {
 
     float area = altura*base/2;
 
-    printf("Area: %.2f", area);
+    printf("Area = %.2f", area);
     return 0;
 }

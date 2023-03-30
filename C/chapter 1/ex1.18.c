@@ -14,6 +14,6 @@ int main() {
     float
     area = diagonalMenor*diagonalMaior/2;
 
-    printf("Area: %.2f", area);
+    printf("Area = %.2f", area);
     return 0;
 }

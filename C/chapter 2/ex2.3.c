@@ -12,9 +12,9 @@ int main() {
   scanf("%d", &n2);
 
   if (n1<n2) {
-  printf("Ordem decescente: %d >= %d", n2, n1);
+  printf("Ordem decrescente: %d >= %d", n2, n1);
   } else {
-  printf("Ordem decescente: %d >= %d", n1, n2);
+  printf("Ordem decrescente: %d >= %d", n1, n2);
   }
 
   return 0;

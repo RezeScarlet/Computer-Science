@@ -6,7 +6,7 @@ int main() {
     n1,
     n2;
 
-    printf("Primeiro Numero: ");
+    printf("Primeiro Numero:");
     scanf("%d", &n1);
     printf("Segunda Numero: ");
     scanf("%d", &n2);
@@ -17,9 +17,9 @@ int main() {
     mul = n1*n2,
     div = n1/n2;
 
-    printf("%d + %d = %d \n", n1, n2, sum);
-    printf("%d - %d = %d \n", n1, n2, sub);
-    printf("%d * %d = %d \n", n1, n2, mul);
-    printf("%d / %d = %d \n", n1, n2, div);
+    printf("%d + %d = %d\n", n1, n2, sum);
+    printf("%d - %d = %d\n", n1, n2, sub);
+    printf("%d * %d = %d\n", n1, n2, mul);
+    printf("%d / %d = %d\n", n1, n2, div);
     return 0;
 }

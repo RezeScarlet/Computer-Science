@@ -12,6 +12,6 @@ int main() {
 
     int idade = anoAtual-anoNasc;
 
-    printf("Idade aproximada: %d", idade);
+    printf("Idade aproximada: %d anos", idade);
     return 0;
 }

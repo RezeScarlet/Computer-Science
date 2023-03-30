@@ -5,7 +5,7 @@
 // Função principal (todo o codigo fica dentro dela)
 int main() {
     // printf para mostrar algo no prompt
-    printf("Hello World!");
+    printf("Ola Mundo!");
     // Retorna 0 se o código foi executado por completo 
     return 0;
 }

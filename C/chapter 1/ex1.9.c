@@ -13,6 +13,6 @@ int main() {
 
     int area = altura*base/2;
 
-    printf("Area: %d", area);
+    printf("Area = %d", area);
     return 0;
 }

@@ -17,6 +17,6 @@ int main() {
     float
     area = (baseMenor+baseMaior)*altura/2;
 
-    printf("Area: %.2f", area);
+    printf("Area = %.2f", area);
     return 0;
 }

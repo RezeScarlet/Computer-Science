@@ -2,16 +2,16 @@
 #include <stdlib.h>
 
 int main() {
-  int
+  float
   F;
 
   printf("Temperatura em graus Fahrenheit: ");
-  scanf("%d", &F);  
+  scanf("%f", &F);  
 
   float
   C = (F-32)/1.8;
 
-  printf("%d graus Fahrenheit correspondem a %.2f graus Celsius", F, C);
+  printf("%.2f graus Fahrenheit correspondem a %.2f graus Celsius", F, C);
   
   return 0;
 }

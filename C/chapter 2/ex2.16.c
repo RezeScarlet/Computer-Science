@@ -10,13 +10,20 @@ int main() {
   scanf("%d", &n);
   printf("%d = ", n);
   
-
+  if (n<=3999 && n>=1) {
   if (n>=1000) {
     int quant = n/1000;
     n = n - (1000*quant);
     for (int i = quant; i != 0; i--) {
       printf("M");
    }
+  }
+  if (n>=900){
+    int quant = n/900;
+    n = n - (900*quant);
+    for (int i = quant; i != 0; i--) {
+      printf("CM");
+    }
   }
   if (n>=500) {
     int quant = n/500;
@@ -25,6 +32,13 @@ int main() {
       printf("D");
    }
 }
+  if (n>=400){
+    int quant = n/400;
+    n = n - (400*quant);
+    for (int i = quant; i != 0; i--) {
+      printf("CD");
+    }
+  }
   if (n>=100){
     int quant = n/100;
     n = n - (100*quant);
@@ -32,11 +46,25 @@ int main() {
       printf("C");
     }
   }
+  if (n>=90){
+    int quant = n/90;
+    n = n - (90*quant);
+    for (int i = quant; i != 0; i--) {
+      printf("XC");
+    }
+  }
   if (n>=50){
     int quant = n/50;
     n = n - (50*quant);
     for (int i = quant; i != 0; i--) {
       printf("L");
+    }
+  }
+  if (n>=40){
+    int quant = n/40;
+    n = n - (40*quant);
+    for (int i = quant; i != 0; i--) {
+      printf("XL");
     }
   }
   if (n>=10){
@@ -60,7 +88,7 @@ int main() {
       printf("VIII");
     }
   }
-  if (n<=){
+  if (n<=7){
     int quant = n/7;
     n = n - (7*quant);
     for (int i = quant; i != 0; i--) {
@@ -108,6 +136,9 @@ int main() {
       printf("I");
     }
   }
-  
+  } else {
+    printf("Numero incorreto!");
+    
+  }
   return 0;
 }

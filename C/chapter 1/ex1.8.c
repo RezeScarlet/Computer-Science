@@ -2,19 +2,19 @@
 #include <stdlib.h>
 
 int main() {
-    float
+    int
     largura,
     altura;
 
     printf("Largura do retangulo: ");
-    scanf("%f", &largura);
+    scanf("%d", &largura);
     printf("Altura do retangulo: ");
-    scanf("%f", &altura);
+    scanf("%d", &altura);
 
-    float
+    int
     perimetro = 2*altura + 2*largura,
     area = altura*largura;
 
-    printf("Perimetro: %.2f \nArea: %.2f", perimetro, area);
+    printf("Perimetro = %d\nArea = %d", perimetro, area);
     return 0;
 }

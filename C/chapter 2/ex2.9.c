@@ -14,13 +14,13 @@ int main() {
   scanf("%f", &medidaL);
   
   if (quantL == 3){
-    printf("Triangulo de perimetro: %.2f", quantL*medidaL);
+    printf("TRIANGULO de perimetro %.2f", quantL*medidaL);
   } else if (quantL == 4) {
-    printf("Quadrado de area: %.2f", medidaL*medidaL);
+    printf("QUADRADO de area %.2f", medidaL*medidaL);
   } else if (quantL == 5) {
-    printf("Pentagono");
+    printf("PENTAGONO");
   } else {
-    printf(" Poligono nao identificado");
+    printf("Poligono nao identificado");
 
   }
 

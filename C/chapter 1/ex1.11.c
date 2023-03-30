@@ -14,6 +14,6 @@ int main() {
     int
     area = diagonalMenor*diagonalMaior/2;
 
-    printf("Area: %d", area);
+    printf("Area = %d", area);
     return 0;
 }

@@ -2,15 +2,15 @@
 #include <stdlib.h>
 
 int main() {
-    int lado;
+    float lado;
 
     printf("Lado do quadrado: ");
-    scanf("%d", &lado);
+    scanf("%f", &lado);
 
-    int 
+    float 
     perimetro = lado*4,
     area = lado*lado;
 
-    printf("Perimetro: %d\nArea: %d", perimetro, area);
+    printf("Perimetro = %.2f\nArea = %.2f", perimetro, area);
     return 0;
 }
