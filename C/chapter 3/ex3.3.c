@@ -3,9 +3,8 @@
 #include <stdlib.h>
 
 int main() {
-  for (int i = 0; i < 51; i = i+2) {
+  for (int i = 20; i > -1; i--) {
     printf("%d ", i);
-
     
   }
   
