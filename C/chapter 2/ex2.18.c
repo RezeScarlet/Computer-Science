@@ -15,7 +15,7 @@ int main() {
   printf("N2: ");
   scanf("%f", &n2);
   printf("Escolha uma operacao de acordo com o menu:\n\t+) Adicao;\n\t-) Subtracao;\n\t*) Multiplicacao;\n\t/) Divisao.\nOperacao: ");
-  scanf("%c", &operacao);
+  scanf(" %c", &operacao);
   
   switch (operacao)
   {
@@ -32,6 +32,8 @@ int main() {
     printf("%.2f %c %.2f = %.2f", n1, operacao, n2, n1/n2);
     break;
   default:
+    printf("Opcao invalida!");
+    
     break;
   }
 
