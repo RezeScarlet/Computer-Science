@@ -6,7 +6,7 @@ int main() {
   int
   n1,
   n2,
-	somatorio;
+	somatorio = 0;
   
   printf("N1: ");
   scanf("%d", &n1);
@@ -20,7 +20,7 @@ int main() {
   }
 
 	for (int i = n2; i > n1-1; i--) {
-		somatorio+=i;
+		somatorio+=i;    
 		
 	}
 
