@@ -4,7 +4,7 @@
 
 int main() {
 	int array[5];
-	int cont = 4;
+	int cont = 5;
 	
 	for (int i = 0; i < 5; i++) {
 		printf("array[%d]: ", i);
@@ -19,7 +19,7 @@ int main() {
 						 
 		}
 	}
-	if (cont == 0) {
+	if (cont == 5) {
 		printf(" nao ha");
 		
 	}
@@ -34,7 +34,7 @@ int main() {
 
 		}
 	}
-	if (cont == 0) {
+	if (cont == 5) {
 	printf(" nao ha");
 	
 	}
