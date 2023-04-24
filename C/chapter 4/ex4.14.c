@@ -18,7 +18,7 @@ int main() {
 			for (int j = i; j < 10-quant; j++) {
 				array[j] = array[j+1];
 			}
-			i = quant;
+			i = quant-1;
 			quant++;
 			
 		}
