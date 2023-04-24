@@ -12,12 +12,13 @@ int main() {
 		
 	}
 
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < 10-quant; i++) {
 		if (array[i] % 2 == 0) {
-		for (int j = i; j < 10; j++) {
-			array[i] = array[i+1];
-
-		}
+			
+			for (int j = i; j < 10-quant; j++) {
+				array[j] = array[j+1];
+			}
+			i = quant;
 			quant++;
 			
 		}
