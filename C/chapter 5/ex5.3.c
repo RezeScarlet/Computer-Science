@@ -24,11 +24,14 @@ int main() {
 			
 		}
 	}
-		printf("arrayMult:\n");
+		printf("\narrayMult:\n");
 
 		for (int i = 0; i < 3; i++) {
 			for (int j = 0; j < 4; j++) {
-				printf("%03d ", arrayMult[i][j]);
+				printf("%03d", arrayMult[i][j]);
+				if (j!=3) {
+				printf(" ");
+			}
 			
 			}
 			printf("\n");

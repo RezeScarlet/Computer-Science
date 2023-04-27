@@ -15,7 +15,7 @@ int main() {
 		}
 		
 	}
-	printf("");
+	printf("Determinante: %d", (matriz[0][0]*matriz[1][1])-(matriz[0][1]*matriz[1][0]));
 	
 	return 0;
 }
