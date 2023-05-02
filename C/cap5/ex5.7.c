@@ -19,17 +19,13 @@ int main() {
 		for (int j = 0; j < 3; j++) {
 			printf("array2[%d][%d]: ", i, j);
 			scanf("%d", &matriz2[i][j]);	
-						printf("\n%d\n", matriz2[i][j]);
 	
-
 		}
 	}
 
 	printf("\nA x B =\n");
-	for (int i = 0; i < 3; i++) {	
-		printf("%d", matri);
-		
-		printf("%03d ", matriz1[1][1]*matriz2[1][i]+matriz1[1][2]*matriz2[2][i]);
+	for (int i = 0; i < 3; i++) {		
+		printf("%03d ", matriz1[0][0]*matriz2[0][i]+matriz1[0][1]*matriz2[1][i]);
 		
 	}
 	
