@@ -24,9 +24,16 @@ int main() {
 	}
 
 	printf("\nA x B =\n");
-	for (int i = 0; i < 3; i++) {		
-		printf("%03d ", matriz1[0][0]*matriz2[0][i]+matriz1[0][1]*matriz2[1][i]);
-		
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {		
+			printf("%03d", matriz1[i][0]*matriz2[0][j]+matriz1[i][1]*matriz2[1][j]);
+
+			if (j != 2) {
+				printf(" ");
+				
+			}
+		}
+			printf("\n");
 	}
 	
 	
