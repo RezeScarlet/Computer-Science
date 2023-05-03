@@ -19,23 +19,22 @@ int main() {
 
 		for (int k = 0; k < valor; k++) {
 		
-		for (int i = 0; i < valor; i++) {
+		for (int i = k; i < valor-k; i++) {
 			for (int j = 0; j < valor; j++) {
 				if (j >= comeco && j < fim) {
-					array[k][j] = j+1;
-
+					array[i][j] = k+1;
 				}
 			}
 		}
-		}
 		comeco++;
 		fim--;
+		}
 		
 		printf("\n");
 		
 		for (int i = 0; i < valor; i++) {
 			for (int j = 0; j < valor; j++) {
-				printf("  %d", array[i][j]);
+				printf("%3d", array[i][j]);
 				if (j != valor-1) {
 					printf(" ");
 					
