@@ -17,13 +17,16 @@ int main() {
 		int fim = valor;
 		int comeco = 0;
 
+		for (int k = 0; k < valor; k++) {
+		
 		for (int i = 0; i < valor; i++) {
 			for (int j = 0; j < valor; j++) {
 				if (j >= comeco && j < fim) {
-					array[i][j] = i+1;
+					array[k][j] = j+1;
 
 				}
 			}
+		}
 		}
 		comeco++;
 		fim--;
