@@ -14,10 +14,23 @@ int main() {
 	} else {	
 
 		int array[valor][valor];
+		int linha = 0;
 
-		for (int i = 0; i < valor; i++) {
+		while (linha != valor) {
 			
+			int j = linha+1;
+			for (int i = 0; i < linha; i++) {
+				array[linha][i] = j;
+				
+				j--;
+				
+			}
+			for (int i = 0; i < valor-linha; i++) {			
+				array[linha][i+linha] = i+1;
+			}
+			linha++;
 		}
+
 		
 		
 		printf("\n");
