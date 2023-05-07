@@ -20,17 +20,23 @@ int main() {
 	} else {
 
 		
-		float delta = pow(b, 2) - 4 * a * c;
+		double delta = pow(b, 2) - (4 * a * c);
 		printf("Delta: %.2f", delta);
 		
 
 		if (delta<0) {
-			printf("S = {}");
+			printf("\nS = {}");
 			
 		} else {
-			float x1 = ((b*-1) + delta) / (2 * a);
-			float x2 = ((b*-1) - delta) / (2 * a);
-			printf("\nS = {%.2f, %.2f}", fmin(a, b), fmax(a, b));
+			float x1 = ((b*-1) + sqrt(delta)) / (2 * a);
+			float x2 = ((b*-1) - sqrt(delta)) / (2 * a);
+			if (x1 != x2) {
+			printf("\nS = {%.2f, %.2f}", fmin(x1, x2), fmax(x1, x2));
+
+			} else {
+				printf("\nS = {%.2f}", x1);
+
+			}
 			
 		}
 
