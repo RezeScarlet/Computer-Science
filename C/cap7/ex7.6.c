@@ -2,6 +2,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int lePositivo();
+
+int somaDivisores(int n);
+
+int main() {
+	int n[5];
+	
+	for (int i = 0; i < 5; i++) {
+		printf("N[%d]: ", i);
+		n[i] = lePositivo();		
+		
+	}
+
+	for (int i = 0; i < 5; i++) {
+		printf("\nSoma dos divisores de %d: %d", n[i], somaDivisores(n[i]));
+		
+	}
+	
+
+	return 0;
+}
+
 int lePositivo() {
 	int valor;
 		do {
@@ -25,22 +47,4 @@ int somaDivisores(int n) {
 	}
 	
 	return soma;
-}
-
-int main() {
-	int n[5];
-	
-	for (int i = 0; i < 5; i++) {
-		printf("N[%d]: ", i);
-		n[i] = lePositivo();		
-		
-	}
-
-	for (int i = 0; i < 5; i++) {
-		printf("\nSoma dos divisores de %d: %d", n[i], somaDivisores(n[i]));
-		
-	}
-	
-
-	return 0;
 }

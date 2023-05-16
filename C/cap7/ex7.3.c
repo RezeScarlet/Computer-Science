@@ -2,18 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-float MaiorNumero (float n1, float n2) {
-	if (n1 == n2) {
-		return -1;
-
-	} else if (n1 > n2) {
-		return n1;
-
-	} else if (n2 > n1) {
-		return n2;
-		
-	} 
-}
+float MaiorNumero (float n1, float n2);
 
 int main() {
 	float numeros[5][2];
@@ -45,4 +34,17 @@ int main() {
 	
 	
 	return 0;
+}
+
+float MaiorNumero (float n1, float n2) {
+	if (n1 == n2) {
+		return -1;
+
+	} else if (n1 > n2) {
+		return n1;
+
+	} else if (n2 > n1) {
+		return n2;
+		
+	} 
 }

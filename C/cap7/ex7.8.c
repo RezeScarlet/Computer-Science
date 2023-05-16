@@ -3,41 +3,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-int lePositivo() {
-	int valor;
-		do {
+int lePositivo();
 
-			scanf("%d", &valor);			
-			if (valor <= 0)
-			printf("Entre com um valor positivo!: ");
-		}	while (valor <= 0);
-	
-	return valor;	
-}
-bool saoAmigos(int n1, int n2) {	
-	int soma1 = 0;
-	int soma2 = 0;
-
-	for (int i = n1-1; i > 0; i--) {		
-		if (n1 % i == 0) {			
-			soma1 += i;
-			
-		}
-	}
-	for (int i = n2-1; i > 0; i--) {				
-		if (n2 % i == 0) {
-			soma2 += i;
-			
-		}
-	}
-
-	if (soma1 == n2 && soma2 == n1) {
-		return true;
-	} else {
-		return false;
-	}
-
-}
+bool saoAmigos(int n1, int n2);
 
 int main() {
 	int n[5][2];
@@ -62,4 +30,41 @@ int main() {
 	
 
 	return 0;
+}
+
+int lePositivo() {
+	int valor;
+		do {
+
+			scanf("%d", &valor);			
+			if (valor <= 0)
+			printf("Entre com um valor positivo!: ");
+		}	while (valor <= 0);
+	
+	return valor;	
+}
+
+bool saoAmigos(int n1, int n2) {	
+	int soma1 = 0;
+	int soma2 = 0;
+
+	for (int i = n1-1; i > 0; i--) {		
+		if (n1 % i == 0) {			
+			soma1 += i;
+			
+		}
+	}
+	for (int i = n2-1; i > 0; i--) {				
+		if (n2 % i == 0) {
+			soma2 += i;
+			
+		}
+	}
+
+	if (soma1 == n2 && soma2 == n1) {
+		return true;
+	} else {
+		return false;
+	}
+
 }

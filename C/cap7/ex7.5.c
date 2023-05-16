@@ -3,25 +3,9 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-bool ehPar(int n) {
-	if (n % 2 == 0) {
-		return true;
+bool ehPar(int n);
 
-	} else {
-		return false;
-
-	}
-}
-
-bool ehDivisivel(int dividendo, int divisor) {
-	if (dividendo % divisor == 0) {
-		return true;
-
-	} else {
-		return false;
-		
-	}
-}
+bool ehDivisivel(int dividendo, int divisor);
 
 int main() {
 	int n[5][2];
@@ -54,4 +38,24 @@ int main() {
 
 
 	return 0;
+}
+
+bool ehPar(int n) {
+	if (n % 2 == 0) {
+		return true;
+
+	} else {
+		return false;
+
+	}
+}
+
+bool ehDivisivel(int dividendo, int divisor) {
+	if (dividendo % divisor == 0) {
+		return true;
+
+	} else {
+		return false;
+		
+	}
 }

@@ -3,25 +3,12 @@
 #include <stdlib.h>
 #include <math.h>
 
+float areaCirculo (float raio);
 
-// const double PI = acos(-1);
-
-//Calcula a área do círculo representado pelo raio fornecido.
-float areaCirculo (float raio) {
-	double PI = acos(-1);
-	return PI*pow(raio, 2);
-
-}
-
-//Calcula a circunferência do círculo representado pelo raio fornecido.
-float circunferenciaCirculo (float raio) {
-	double PI = acos(-1);
-	
-	return 2*PI*raio;
-
-}
+float circunferenciaCirculo (float raio);
 
 int main() {
+	const double PI = acos(-1);
 	float raio;
 
 	printf("Raio: ");
@@ -32,4 +19,17 @@ int main() {
 	
 	
 	return 0;
+}
+
+float areaCirculo (float raio) {
+	double PI = acos(-1);
+	return PI*pow(raio, 2);
+
+}
+
+float circunferenciaCirculo (float raio) {
+	double PI = acos(-1);
+	
+	return 2*PI*raio;
+
 }

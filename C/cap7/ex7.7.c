@@ -3,20 +3,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-bool ehPrimo(int n) {
-	if (n == 1) {
-		return false;
-	}
-	
-	for (int i = 2; i < n-1; i++) {
-		if (n % i == 0) {
-			return false;
-			
-		}
-	}
-	
-	return true;
-}
+bool ehPrimo(int n);
 
 int main() {
 	for (int i = 1; i <= 20; i++) {
@@ -30,4 +17,19 @@ int main() {
 	}
 	
 	return 0;
+}
+
+bool ehPrimo(int n) {
+	if (n == 1) {
+		return false;
+	}
+	
+	for (int i = 2; i < n-1; i++) {
+		if (n % i == 0) {
+			return false;
+			
+		}
+	}
+	
+	return true;
 }

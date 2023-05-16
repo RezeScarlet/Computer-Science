@@ -3,15 +3,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-// Calcula o valor absoluto, ou módulo, do número fornecido.
-int absoluto (int n) {
-	if (n<0) {
-		return n*-1;
-	} else {
-		return n;
-	}
-	
-}
+int absoluto (int n);
 
 int main() {
 	int numeros[5];
@@ -30,4 +22,13 @@ int main() {
 	
 
 	return 0;
+}
+
+int absoluto (int n) {
+	if (n<0) {
+		return n*-1;
+	} else {
+		return n;
+	}
+	
 }
