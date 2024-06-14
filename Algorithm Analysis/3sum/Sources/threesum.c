@@ -32,7 +32,7 @@ void treeSumMelhorado(int A[], int n) {
   for (int i = 0; i < n - 2; i++) {
     for (int j = i + 1; j < n - 1; j++) {
       int k = BuscaBinaria((A[i] + A[j]) * -1, A, j + 1, n - 1);
-    qtdOperacoes3SumMelhorado++;
+      qtdOperacoes3SumMelhorado++;
 
       if (k >= 0) {
         cont++;

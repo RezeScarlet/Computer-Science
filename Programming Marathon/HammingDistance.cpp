@@ -3,19 +3,16 @@
 using namespace std;
 int main() {
   while (true) {
-    long x, y;
+    unsigned long long x, y, z;
     int h = 0;
 
     cin >> x >> y;
-
     if (x == 0 && y == 0) break;
 
-    while (x || y) {
-      if ((x & 1) != (y & 1)) {
-        h++;
-      }
-      x >>= 1;
-      y >>= 1;
+    z = x ^ y;
+    while (z) {
+      h += z & 1;
+      z >>= 1;
     }
 
     cout << h << endl;
