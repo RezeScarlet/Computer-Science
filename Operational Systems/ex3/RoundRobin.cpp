@@ -1,3 +1,8 @@
+// Participantes:
+// Aloísio Marques Lingo Filho
+// Guilherme de Souza Dinisio Rosseti
+// Samuel Oliveira Lopes
+
 #include <algorithm>
 #include <fstream>
 #include <iostream>
@@ -12,6 +17,7 @@ public:
   string state;
   int time;
   vector<char> instructions;
+  int executionTime;
 
   Process(int time, vector<char> instructions);
 };
@@ -19,13 +25,16 @@ inline Process::Process(int time, vector<char> instructions) {
   this->state = "new";
   this->time = time;
   this->instructions = instructions;
+  this->executionTime = 0;
 }
 
 int main() {
   unordered_map<char, int> instructionsTime = {
       {'A', 5}, {'B', 7}, {'C', 9}, {'D', 10}};
+
   vector<Process> processList;
   vector<Process> scheduler;
+
   string process;
   ifstream processes("processos.txt");
   for (int i = 0; i < 4; i++) {
@@ -62,11 +71,15 @@ int main() {
 
     if (scheduler.size() > 0) {
       if (scheduler[0].state == "ready") {
+        cout << endl
+             << "Instrucao " << scheduler[0].time << ":"
+             << scheduler[0].instructions[0] << " iniciada" << endl;
         scheduler[0].state = "running";
       }
       quantum++;
       instTime++;
       if (instTime == instructionsTime.at(scheduler[0].instructions[0])) {
+        scheduler[0].executionTime += instTime;
         instTime = 0;
         cout << endl
              << "Instrucao " << scheduler[0].time << ":"
@@ -75,7 +88,7 @@ int main() {
         if (scheduler[0].instructions.size() == 0) {
           scheduler[0].state = "terminated";
           cout << endl
-               << "Processo " << scheduler[0].time << " finalizado" << endl;
+               << "Processo " << scheduler[0].time << " finalizado (tempo de execucao: )" << scheduler[0].executionTime << endl;
           scheduler.erase(scheduler.begin());
           processCount++;
         } else if (quantum >= 5) {
