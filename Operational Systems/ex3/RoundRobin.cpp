@@ -3,6 +3,9 @@
 // Guilherme de Souza Dinisio Rosseti
 // Samuel Oliveira Lopes
 
+// Observação:
+// Verificar inclusão de bibliotecas caso estaja compilando no Windows
+
 #include <algorithm>
 #include <fstream>
 #include <iostream>
