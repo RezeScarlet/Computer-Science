@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <string.h>
 struct Shares {
-  char name[5];
+  char name[6];
   int assets[30];
 };
 
 int main() {
-  struct Shares shares[5];
+  struct Shares shares[30];
   FILE *file = fopen("ativos.txt", "r");
   const char delimiter[] = "; ";
   char buffer[1024];
@@ -17,15 +17,16 @@ int main() {
 
     buffer[strcspn(buffer, "\n")] = 0;
     token = strtok(buffer, delimiter);
-    strcpy(token, shares[i].name);
-    printf("%s", shares[i].name);
-    // Obtenha os números subsequentes
-    while ((token = strtok(NULL, delimiter)) != NULL) {
-      int number = atoi(token);
-      printf("Número: %d\n", number);
+    strcpy(shares[i].name, token);
+    printf("%s\n", shares[i].name);
+
+    for (int j = 0; j < 30; j++) {
+      token = strtok(NULL, delimiter);
+      shares[i].assets[j] = atoi(token);
+      printf("%d\n", shares[i].assets[j]);
     }
 
-    printf("\n"); // Adicione uma linha em branco entre as linhas do arquivo
+    printf("\n");
   }
   fclose(file);
   return 0;
