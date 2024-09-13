@@ -1,3 +1,7 @@
+// Elaborado por
+// Guilherme de Souza Dionisio Rosseti
+// Samuel Oliveira Lopes
+// Yago Miguel Nunes
 #include <limits.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -36,10 +40,10 @@ int main() {
     for (int j = 0; j < 30; j++) {
       token = strtok(NULL, delimiter);
       shares[i].assets[j] = atoi(token);
-      printf("%d, ", shares[i].assets[j]);
       if (j > 0) {
         shares[i].assetsVariation[j] =
             shares[i].assets[j] - shares[i].assets[j - 1];
+        printf("%d, ", shares[i].assetsVariation[j]);
       }
     }
     FindMaxSubarray((shares[i].assetsVariation), 0, 29, &beginning, &end, &value);

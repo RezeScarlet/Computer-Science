@@ -1,60 +1,60 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
-void sort(int array[], int arraySize);
+void sort(int array[], int inicio, int fim);
 
-void printArray(int array[], int arraySize);
-
+void printArray(int array[], int inicio, int fim);
 
 int main() {
-  printf("Quick Sort\n");
-  printf("Entre com o tamanho do Array de Inteiros: \n");
-
-  int instructions = 0;
+  printf("======= Quick Sort =======\n");
+  printf("Tamanho do Array de Inteiros: ");
 
   int arraySize;
   scanf("%d", &arraySize);
 
   int array[arraySize];
-  int orderedArray[arraySize];
 
-  srand(time(NULL));
   for (int i = 0; i < arraySize; i++) {
-    array[i] = rand() % 100;
-    orderedArray[i] = array[i];
+    printf("Item %d do Array: ", i + 1);
+    scanf("%d", &array[i]);
   }
 
-  printf("\nOrdenação\n");
-  sort(orderedArray, arraySize);
-  printf("Array Desordenado: ");
-  printArray(array, arraySize);
-  printf("\nArray Ordenado: ");
-  printArray(orderedArray, arraySize);
-
+  printf("\nOrdenação:\n");
+  sort(array, 0, arraySize);
+  printf("\nArray Ord.   [] = ");
+  printArray(array, 0, arraySize);
   return 0;
 }
 
-void sort(int array[], int arraySize) {
-  if (sizeof(&array) / sizeof(int) == 1) {
-    array[-1] = array[0];
-  } else {
-    int pivot = array[-1];
-    for (int i = 0; i < arraySize; i++) {
-      if (array[i] >= pivot) {
-        biggerArray[-1] = array[i];
-      } else if (array[i] < pivot) {
-        smallerArray[-1] = array[i];
-      }
-      
+void sort(int array[], int inicio, int fim) {
+
+  int pivo, aux, i, j, meio;
+  i = inicio;
+  j = fim;
+  meio = (int)((i + j) / 2);
+  pivo = array[meio];
+  do {
+    while (array[i] < pivo)
+      i = i + 1;
+    while (array[j] > pivo)
+      j = j - 1;
+    if (i <= j) {
+      aux = array[i];
+      array[i] = array[j];
+      array[j] = aux;
+      i = i + 1;
+      j = j - 1;
     }
-    sort(smallerArray, sizeof(&array) / sizeof(int), array);
-  }
+  } while (j > i);
+  printf("\nParte Des.   [] = ");
+  printArray(array, inicio, fim);
+  if (inicio < j)
+    sort(array, inicio, j);
+  if (i < fim)
+    sort(array, i, fim);
 }
 
-void printArray(int array[], int arraySize) {
-  for (int i = 0; i < arraySize; i++) {
+void printArray(int array[], int inicio, int fim) {
+  for (int i = inicio; i < fim; i++) {
     printf("%d ", array[i]);
   }
-} 
-
+}

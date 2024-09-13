@@ -1,0 +1,64 @@
+classDiagram
+    
+    class Curso{
+        String nome
+        int duracaoMeses 
+        Professor professor
+        Biblioteca biblioteca 
+
+        getNome()
+        setNome(String nome)
+        getDuracaoMeses()
+        setDuracaoMeses(int duracaoMeses)
+        getProfessor()
+        setProfessor(Professor professor)
+        iniciarAulas()
+        exibirInformacoes()
+    }
+    
+    class Professor{
+        String nome
+        String especialidade
+        int anosExperiencia
+        
+        getNome()
+        setNome(String nome)
+        getEspecialidade()
+        setEspecialidade(String especialidade)
+        getAnosExperiencia()
+        setAnosExperiencia(int anosExperiencia)
+        ensinar()
+        avaliarAluno(Aluno aluno)
+        exibirPerfil()
+    }
+
+    class Aluno {
+        String nome 
+        int idade 
+        Curso curso
+
+        getNome()
+        setNome(String nome)
+        getIdade()
+        setIdade(int idade)
+        getCurso()
+        setCurso(Curso curso)
+        exibirDados()
+        estudar()
+    }
+
+    class Biblioteca{
+        String nome
+
+        exibirInformacoes()
+    }
+    class CursoOnline {
+        String plataforma
+        
+        getPlataforma()
+        setPlataforma(String plataforma)
+        exibirInformacoes()
+    }
+
+
+
