@@ -1,0 +1,90 @@
+Thread 3: Primeira linha escrita
+Thread 3: Segunda linha escrita
+Thread 3: Terceira linha escrita (Fechar Arquivo)
+Thread 2: Primeira linha escrita
+Thread 2: Segunda linha escrita
+Thread 2: Terceira linha escrita (Fechar Arquivo)
+Thread 1: Primeira linha escrita
+Thread 1: Segunda linha escrita
+Thread 1: Terceira linha escrita (Fechar Arquivo)
+Thread 2: Primeira linha escrita
+Thread 2: Segunda linha escrita
+Thread 2: Terceira linha escrita (Fechar Arquivo)
+Thread 3: Primeira linha escrita
+Thread 3: Segunda linha escrita
+Thread 3: Terceira linha escrita (Fechar Arquivo)
+Thread 1: Primeira linha escrita
+Thread 1: Segunda linha escrita
+Thread 1: Terceira linha escrita (Fechar Arquivo)
+Thread 3: Primeira linha escrita
+Thread 3: Segunda linha escrita
+Thread 3: Terceira linha escrita (Fechar Arquivo)
+Thread 1: Primeira linha escrita
+Thread 1: Segunda linha escrita
+Thread 1: Terceira linha escrita (Fechar Arquivo)
+Thread 2: Primeira linha escrita
+Thread 2: Segunda linha escrita
+Thread 2: Terceira linha escrita (Fechar Arquivo)
+Thread 3: Primeira linha escrita
+Thread 3: Segunda linha escrita
+Thread 3: Terceira linha escrita (Fechar Arquivo)
+Thread 1: Primeira linha escrita
+Thread 1: Segunda linha escrita
+Thread 1: Terceira linha escrita (Fechar Arquivo)
+Thread 2: Primeira linha escrita
+Thread 2: Segunda linha escrita
+Thread 2: Terceira linha escrita (Fechar Arquivo)
+Thread 3: Primeira linha escrita
+Thread 3: Segunda linha escrita
+Thread 3: Terceira linha escrita (Fechar Arquivo)
+Thread 1: Primeira linha escrita
+Thread 1: Segunda linha escrita
+Thread 1: Terceira linha escrita (Fechar Arquivo)
+Thread 3: Primeira linha escrita
+Thread 3: Segunda linha escrita
+Thread 3: Terceira linha escrita (Fechar Arquivo)
+Thread 1: Primeira linha escrita
+Thread 1: Segunda linha escrita
+Thread 1: Terceira linha escrita (Fechar Arquivo)
+Thread 1: Primeira linha escrita
+Thread 1: Segunda linha escrita
+Thread 1: Terceira linha escrita (Fechar Arquivo)
+Thread 3: Primeira linha escrita
+Thread 3: Segunda linha escrita
+Thread 3: Terceira linha escrita (Fechar Arquivo)
+Thread 1: Primeira linha escrita
+Thread 1: Segunda linha escrita
+Thread 1: Terceira linha escrita (Fechar Arquivo)
+Thread 1: Primeira linha escrita
+Thread 1: Segunda linha escrita
+Thread 1: Terceira linha escrita (Fechar Arquivo)
+Thread 2: Primeira linha escrita
+Thread 2: Segunda linha escrita
+Thread 2: Terceira linha escrita (Fechar Arquivo)
+Thread 3: Primeira linha escrita
+Thread 3: Segunda linha escrita
+Thread 3: Terceira linha escrita (Fechar Arquivo)
+Thread 2: Primeira linha escrita
+Thread 2: Segunda linha escrita
+Thread 2: Terceira linha escrita (Fechar Arquivo)
+Thread 3: Primeira linha escrita
+Thread 3: Segunda linha escrita
+Thread 3: Terceira linha escrita (Fechar Arquivo)
+Thread 1: Primeira linha escrita
+Thread 1: Segunda linha escrita
+Thread 1: Terceira linha escrita (Fechar Arquivo)
+Thread 2: Primeira linha escrita
+Thread 2: Segunda linha escrita
+Thread 2: Terceira linha escrita (Fechar Arquivo)
+Thread 3: Primeira linha escrita
+Thread 3: Segunda linha escrita
+Thread 3: Terceira linha escrita (Fechar Arquivo)
+Thread 2: Primeira linha escrita
+Thread 2: Segunda linha escrita
+Thread 2: Terceira linha escrita (Fechar Arquivo)
+Thread 2: Primeira linha escrita
+Thread 2: Segunda linha escrita
+Thread 2: Terceira linha escrita (Fechar Arquivo)
+Thread 2: Primeira linha escrita
+Thread 2: Segunda linha escrita
+Thread 2: Terceira linha escrita (Fechar Arquivo)
