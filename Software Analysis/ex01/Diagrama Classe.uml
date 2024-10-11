@@ -1,5 +1,9 @@
 classDiagram
-    
+    Curso <-- Professor
+    Curso <-- Biblioteca
+    Curso <|-- CursoOnline
+    Curso --> Aluno
+
     class Curso{
         String nome
         int duracaoMeses 
@@ -59,6 +63,7 @@ classDiagram
         setPlataforma(String plataforma)
         exibirInformacoes()
     }
+
 
 
 
