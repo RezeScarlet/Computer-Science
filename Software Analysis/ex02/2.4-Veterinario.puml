@@ -1,0 +1,28 @@
+@startuml
+usecase "Marcar consulta" as S1
+usecase "Atualizar cadastro de cliente ou animal" as S2
+usecase "Registrar sintomas e consultas" as S3
+usecase "Registrar pedido de exames e resultados" as S4
+usecase "Fornecer receitas de medicamentos" as S5
+
+actor "Cliente, Secretária" as A1
+actor "Cliente, Secretária" as A2
+actor "Cliente, Veterinário" as A3
+actor Veterinário as A4
+actor Veterinário as A5
+
+A1 -> S1:Informações pessoais do cliente e do animal
+S1 -> A1:Confirmação de consulta
+
+A2 -> S2:Informações atualizadas
+S2 -> A2:Confirmação de atualização
+
+A3 -> S3:Sintomas do animal
+S3 -> A3:Histórico de consulta atualizado
+
+A4 -> S4:Solicitação de exames
+S4 -> A4:Resultados dos exames no histórico
+
+A5 -> S5:Diagnóstico e medicamentos prescritos
+S5 -> A5:Receita de medicamentos
+@enduml

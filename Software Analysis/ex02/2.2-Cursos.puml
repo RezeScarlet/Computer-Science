@@ -1,0 +1,39 @@
+@startuml
+
+usecase S1 as "
+Solicitar informacoes sobre cursos
+"
+
+usecase as S2 "
+Consultar turmas disponiveis
+"
+usecase S3 as "
+Realizar matricula
+"
+
+usecase S4 as "
+Cadastrar aluno
+"
+
+usecase S5 as "
+Manutencao de filmes e copias
+"
+
+actor "Aluno, Atendente" as A1
+actor "Aluno, Atendente" as A2
+1actor "Aluno, Atendente" as A3
+actor "Aluno, Atendente" as A4
+
+A1 -> S1:Nome do aluno
+S1 -> A1:Informacoes sobre cursos disponiveis
+
+A2 -> S2:Nome do aluno, curso de interesse
+S2 -> A2:Informacoes sobre turmas abertas, horarios e datas
+
+A3 -> S3:Nome do aluno, turma escolhida
+S3 -> A3:Confirmacao da matricula
+
+A4 -> S4:Informacoes pessoais do aluno
+S4 -> A4:Confirmacao do cadastro
+@enduml
+

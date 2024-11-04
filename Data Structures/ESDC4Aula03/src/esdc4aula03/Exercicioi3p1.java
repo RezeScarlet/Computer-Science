@@ -44,7 +44,7 @@ public class Exercicioi3p1 {
       people.enqueue(i);
     }
 
-    while (people.getSize() > 0) {
+    while (!people.isEmpty()) {
       for (int j = 1; j < m; j++) {
         people.enqueue(people.dequeue());
       }

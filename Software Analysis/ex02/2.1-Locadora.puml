@@ -1,0 +1,69 @@
+@startuml
+
+usecase S1 as "
+Verificar socio cadastrado
+-- Principais --
+Inserir Codigo do Socio: O atendente insere o codigo do socio no sistema.
+Verificar Cadastro: O sistema verifica se o socio esta cadastrado.
+Exibir Status: O sistema exibe o status de cadastro do socio.
+-- Alternativos --
+Se o socio nao estiver cadastrado, o sistema exibe uma mensagem de erro e sugere o procedimento para cadastro.
+"
+
+usecase S2 as "
+Recusar locacao por falta de cadastro
+-- Principais --
+O sistema identifica que o socio nao esta cadastrado.
+O atendente informa ao socio que a locacao sera recusada.
+-- Alternativos --
+"
+
+usecase S3 as "
+Verificar pendencias de devolucao
+-- Principais --
+O atendente insere o codigo do socio e acessa o historico de locacoes.
+O sistema verifica se o socio possui pendencias de devolucao.
+O sistema exibe o status das pendencias.
+-- Alternativos --
+Se o socio tiver pendencias, a locacao sera recusada e o atendente sera notificado.
+"
+
+usecase S4 as "
+Registrar locacao e entregar copias
+-- Principais --
+O socio informa os numeros das copias dos filmes que deseja locar.
+O atendente registra a locacao no sistema.
+O sistema confirma a locacao e gera as informacoes sobre os filmes locados.
+O atendente entrega as copias ao socio.
+-- Alternativos --
+"
+
+usecase S5 as "
+Manutencao de filmes e copias
+-- Principais --
+O atendente insere informacoes sobre novos filmes no sistema.
+O sistema confirma o registro dos novos filmes.
+"
+
+actor Atendente as A1
+actor "Atendente, Socio" as A2
+actor Atendente as A3
+actor "Atendente, Socio" as A4
+actor Atendente as A5
+
+A1 -> S1:Codigo do socio
+S1 -> A1:Status de cadastro do socio
+
+A2 -> S2:Codigo do socio
+S2 -> A2:Mensagem de erro para o socio
+
+A3 -> S3:Codigo do socio, historico de locacoes
+S3 -> A3:Status de pendencias de locacoes anteriores
+
+A4 -> S4:Codigo do socio, numeros das copias dos filmes
+S4 -> A4:Confirmacao da locacao, informacoes dos filmes locados
+
+A5 -> S5:Informacoes de novos filmes    
+S5 -> A5:Confirmacao de registro de novos filmes
+@enduml
+

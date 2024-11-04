@@ -1,0 +1,28 @@
+@startuml
+usecase "Cadastrar cliente e parte contrária" as S1
+usecase "Registrar processo" as S2
+usecase "Registrar audiências" as S3
+usecase "Gerar relatórios de processos" as S4
+usecase "Controlar contas a pagar e receber" as S5
+
+actor Advogado as A1
+actor Advogado as A2
+actor Advogado as A3
+actor Advogado as A4
+actor Advogado as A5
+
+A1 -> S1:Informações de clientes e partes contrárias
+S1 -> A1:Confirmação de cadastro
+
+A2 -> S2:Detalhes do processo
+S2 -> A2:Confirmação de registro do processo
+
+A3 -> S3:Informações de audiência e recomendações do tribunal
+S3 -> A3:Registro no histórico do processo
+
+A4 -> S4:Informações do processo
+S4 -> A4:Relatório de situação do processo
+
+A5 -> S5:Dados financeiros
+S5 -> A5:Controle de contas atualizado
+@enduml

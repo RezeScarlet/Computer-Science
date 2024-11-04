@@ -1,0 +1,23 @@
+@startuml
+usecase "Selecionar origem e destino" as S1
+usecase "Selecionar datas de partida e retorno" as S2
+usecase "Consultar voos disponíveis" as S3
+usecase "Comprar passagens" as S4
+
+actor Cliente as A1
+actor Cliente as A2
+actor Cliente as A3
+actor Cliente as A4
+
+A1 -> S1:Origem e destino do voo
+S1 -> A1:Confirmação de origem e destino
+
+A2 -> S2:Data de partida e retorno
+S2 -> A2:Confirmação das datas selecionadas
+
+A3 -> S3:Origem, destino, datas, classe
+S3 -> A3:Horários e preços dos voos disponíveis
+
+A4 -> S4:Horário, classe, poltronas, forma de pagamento
+S4 -> A4:Confirmação de compra da passagem
+@enduml
