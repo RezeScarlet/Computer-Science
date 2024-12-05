@@ -1,0 +1,21 @@
+@startuml
+skinparam linestyle ortho
+rectangle "Advogado" as advogado
+rectangle "Sistema" as sistema
+
+advogado -right-> sistema: Cadastrar cliente e parte contrária
+sistema -left-> advogado: Confirmação de cadastro
+
+advogado -down-> sistema: Registrar processo
+sistema -down-> advogado: Confirmação de registro do processo
+
+advogado -right-> sistema: Registrar audiências
+sistema -down-> sistema: Salvar informações de audiência no histórico
+sistema -left-> advogado: Registro no histórico do processo
+
+advogado -right-> sistema: Gerar relatórios de processos
+sistema -down-> advogado: Relatório de situação do processo
+
+advogado -right-> sistema: Controlar contas a pagar e receber
+sistema -left-> advogado: Controle de contas atualizado
+@enduml

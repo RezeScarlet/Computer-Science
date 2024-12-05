@@ -1,0 +1,22 @@
+@startuml
+skinparam linestyle ortho
+rectangle "Cliente" as cliente
+rectangle "Sistema" as sistema
+
+cliente -right-> sistema: Selecionar origem e destino
+sistema -left-> cliente: Confirmação de origem e destino
+
+cliente -right-> sistema: Selecionar datas de partida e retorno
+sistema -left-> cliente: Confirmação das datas selecionadas
+
+cliente -right-> sistema: Consultar voos disponíveis
+sistema -down-> sistema: Buscar horários e preços dos voos
+sistema -left-> cliente: Horários e preços dos voos disponíveis
+
+cliente -right-> sistema: Comprar passagens [De acordo com horário e preço]
+sistema -down-> cliente: Selecionar poltronas disponíveis
+cliente -down-> sistema: Informar forma de pagamento
+sistema -down-> sistema: Processar pagamento
+sistema -left-> cliente: Confirmação de compra da passagem
+
+cliente -rig

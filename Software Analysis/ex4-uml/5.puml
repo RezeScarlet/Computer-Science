@@ -1,0 +1,20 @@
+@startuml
+actor Advogado
+participant Sistema
+
+Advogado -> Sistema: Cadastrar cliente e parte contrária
+Sistema -> Advogado: Confirmação de cadastro
+
+Advogado -> Sistema: Registrar processo
+Sistema -> Advogado: Confirmação de registro do processo
+
+Advogado -> Sistema: Registrar audiências
+Sistema -> Sistema: Salvar informações de audiência no histórico
+Sistema -> Advogado: Registro no histórico do processo
+
+Advogado -> Sistema: Gerar relatórios de processos
+Sistema -> Advogado: Relatório de situação do processo
+
+Advogado -> Sistema: Controlar contas a pagar e receber
+Sistema -> Advogado: Controle de contas atualizado
+@enduml

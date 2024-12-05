@@ -1,0 +1,28 @@
+@startuml
+actor Aluno
+actor Atendente
+
+Aluno -> Atendente: Solicitar informações sobre cursos
+Atendente -> Aluno: Informações sobre cursos disponíveis
+
+alt Aluno interessado em curso
+    Aluno -> Atendente: Pedir informações sobre turmas
+    Atendente -> Aluno: Informações sobre turmas abertas, horários e datas
+
+    alt Horário compatível
+        alt Aluno não cadastrado
+            Aluno -> Atendente: Informar dados pessoais
+            Atendente -> Atendente: Cadastrar aluno
+            Atendente -> Aluno: Confirmação do cadastro
+        end
+        
+        Aluno -> Atendente: Realizar matrícula na turma escolhida
+        Atendente -> Atendente: Registrar matrícula
+        Atendente -> Aluno: Confirmação da matrícula
+    else Horário incompatível
+        Aluno -> Atendente: Informar que não há compatibilidade
+    end
+else Aluno não interessado
+    Aluno -> Atendente: Agradecer e sair
+end
+@enduml

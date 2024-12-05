@@ -1,0 +1,24 @@
+@startuml
+actor Cliente
+participant Sistema
+
+Cliente -> Sistema: Selecionar origem e destino
+Sistema -> Cliente: Confirmação de origem e destino
+
+Cliente -> Sistema: Selecionar datas de partida e retorno
+Sistema -> Cliente: Confirmação das datas selecionadas
+
+Cliente -> Sistema: Consultar voos disponíveis
+Sistema -> Sistema: Buscar horários e preços dos voos
+Sistema -> Cliente: Horários e preços dos voos disponíveis
+
+alt Cliente de acordo com horário e preço
+    Cliente -> Sistema: Comprar passagens
+    Sistema -> Cliente: Selecionar poltronas disponíveis
+    Cliente -> Sistema: Informar forma de pagamento
+    Sistema -> Sistema: Processar pagamento
+    Sistema -> Cliente: Confirmação de compra da passagem
+else Cliente não de acordo
+    Cliente -> Sistema: Cancelar operação
+end
+@enduml

@@ -1,0 +1,43 @@
+@startuml
+skinparam linestyle ortho
+rectangle "Socio" as socio
+rectangle "Atendente" as atendente
+
+socio -right-> atendente: Informar código do sócio
+atendente -down-> atendente: Verificar se sócio está cadastrado
+atendente -down-> atendente: Sócio cadastrado?
+atendente --> socio: Mensagem de erro [Não]
+
+atendente -right-> atendente: Verificar pendências [Sim]
+atendente --> socio: Recusar locação [Pendências encontradas]
+socio -right-> atendente: Informar números das cópias [Sem pendências]
+atendente -down-> atendente: Registrar locação
+atendente --> socio: Entregar confirmação da locação
+
+atendente -down-> atendente: Manutenção de filmes e cópias
+atendente -down-> atendente: Registrar novos filmes
+atendente -down-> atendente: Confirmação do registro
+@enduml@startuml
+skinparam linestyle ortho
+rectangle "Socio" as socio
+rectangle "Atendente" as atendente
+@startuml
+skinparam linestyle ortho
+rectangle "Socio" as socio
+rectangle "Atendente" as atendente
+
+socio -right-> atendente: Informar código do sócio
+atendente -down-> atendente: Verificar se sócio está cadastrado
+atendente -down-> atendente: Sócio cadastrado?
+atendente --> socio: Mensagem de erro [Não]
+
+atendente -right-> atendente: Verificar pendências [Sim]
+atendente --> socio: Recusar locação [Pendências encontradas]
+socio -right-> atendente: Informar números das cópias [Sem pendências]
+atendente -down-> atendente: Registrar locação
+atendente --> socio: Entregar confirmação da locação
+
+atendente -down-> atendente: Manutenção de filmes e cópias
+atendente -down-> atendente: Registrar novos filmes
+atendente -down-> atendente: Confirmação do registro
+@enduml

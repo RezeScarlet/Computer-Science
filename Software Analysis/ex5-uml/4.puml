@@ -1,0 +1,27 @@
+@startuml
+skinparam linestyle ortho
+rectangle "Cliente" as cliente
+rectangle "Secretaria" as secretaria
+rectangle "Veterinario" as veterinario
+
+cliente -right-> secretaria: Marcar consulta
+secretaria -left-> cliente: Confirmação de consulta
+
+cliente -down-> secretaria: Informar dados pessoais e do animal [Não cadastrado]
+secretaria -down-> secretaria: Atualizar cadastro
+secretaria -up-> cliente: Confirmação de atualização
+
+cliente -right-> veterinario: Informar sintomas do animal
+veterinario -down-> veterinario: Registrar sintomas
+veterinario -left-> cliente: Diagnóstico e plano de tratamento
+
+veterinario -right-> veterinario: Marcar exames [Várias sessões]
+veterinario -up-> cliente: Solicitar exames para a próxima sessão
+veterinario -down-> veterinario: Finalizar tratamento [Tratamento encerrado]
+
+cliente -right-> veterinario: Retornar para consulta
+veterinario -down-> veterinario: Registrar pedido de exames
+veterinario -up-> cliente: Resultados dos exames no histórico
+
+veterinario -up-> cliente: Fornecer receitas de medicamentos
+@enduml

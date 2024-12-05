@@ -1,0 +1,23 @@
+@startuml
+actor Socio
+actor Atendente
+
+Socio -> Atendente: Informar código do sócio
+Atendente -> Atendente: Verificar se sócio está cadastrado
+alt Sócio cadastrado
+    Atendente -> Atendente: Verificar pendências de devolução
+    alt Pendências encontradas
+        Atendente -> Socio: Recusar locação por falta de devolução
+    else Sem pendências
+        Socio -> Atendente: Informar números das cópias dos filmes
+        Atendente -> Atendente: Registrar locação
+        Atendente -> Socio: Entregar cópias e confirmação da locação
+    end
+else Sócio não cadastrado
+    Atendente -> Socio: Mensagem de erro para o sócio
+end
+
+Atendente -> Atendente: Manutenção de filmes e cópias
+Atendente -> Atendente: Registrar novos filmes
+Atendente -> Atendente: Confirmação de registro de novos filmes
+@enduml

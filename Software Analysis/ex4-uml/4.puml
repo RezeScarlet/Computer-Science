@@ -1,0 +1,31 @@
+@startuml
+actor Cliente
+actor Secretaria
+actor Veterinario
+
+Cliente -> Secretaria: Marcar consulta
+Secretaria -> Cliente: Confirmação de consulta
+
+alt Cliente ou animal não cadastrado
+    Cliente -> Secretaria: Informar dados pessoais e do animal
+    Secretaria -> Secretaria: Atualizar cadastro
+    Secretaria -> Cliente: Confirmação de atualização
+end
+
+Cliente -> Veterinario: Informar sintomas do animal
+Veterinario -> Veterinario: Registrar sintomas
+Veterinario -> Cliente: Diagnóstico e plano de tratamento
+
+alt Tratamento com várias sessões
+    Veterinario -> Veterinario: Marcar exames
+    Veterinario -> Cliente: Solicitar exames para a próxima sessão
+else Tratamento encerrado
+    Veterinario -> Veterinario: Finalizar tratamento
+end
+
+Cliente -> Veterinario: Retornar para consulta
+Veterinario -> Veterinario: Registrar pedido de exames
+Veterinario -> Cliente: Resultados dos exames no histórico
+
+Veterinario -> Cliente: Fornecer receitas de medicamentos
+@enduml
