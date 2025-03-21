@@ -1,0 +1,5 @@
+he = int(input("Hora do estacionamento: "))
+me = int(input("Minuto do estacionamento: "))
+hs = int(input("Hora saida: "))
+ms = int(input("Minuto saida: "))
+print(f"Valor final: {(((hs-he)*60) + (ms - me)) * 4/60}")
