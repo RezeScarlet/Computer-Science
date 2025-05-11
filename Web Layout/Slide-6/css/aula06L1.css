@@ -1,0 +1,41 @@
+/* 
+Author: Guilherme de Souza Dionisio Rosseti BV: 3032019 
+Data de Implementação: 10/04/2025 
+*/
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header,
+footer {
+  background: lime;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+nav {
+  background: blue;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+main {
+  flex: 1;
+  background: cyan;
+  text-align: center;
+  padding: 50px;
+  font-weight: bold;
+}

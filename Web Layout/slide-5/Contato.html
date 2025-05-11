@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Author: Guilherme de Souza Dionisio Rosseti BV3032019-->
+    <!-- Data da implementação: 04/04/2025 -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #1f1d2e;
+        color: rgb(224, 222, 244);
+      }
+      div#header {
+        background-color: rgb(235, 111, 146);
+        color: rgb(224, 222, 244);
+        padding: 15px;
+        text-align: center;
+      }
+      div#section {
+        max-width: 50%;
+        float: left;
+        padding: 10px;
+      }
+      div#figure {
+        max-width: 40%;
+        float: right;
+        padding: 10px;
+        text-align: center;
+      }
+      div#figure img {
+        width: 100%;
+        height: auto;
+      }
+      div#footer {
+        clear: both;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #191724;
+        text-align: center;
+        color: rgb(224, 222, 244);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin-top: 10px;
+      }
+      input,
+      textarea {
+        padding: 8px;
+        margin-top: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      input[type="submit"] {
+        background-color: rgb(235, 111, 146);
+        color: white;
+        border: none;
+        margin-top: 15px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #d74a76;
+      }
+    </style>
+    <title>Formulário de Contato</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Formulário de Contato</h1>
+    </div>
+
+    <div id="main">
+      <div id="section">
+        <h2>Entre em contato conosco</h2>
+        <form>
+          <label for="nome">Nome:</label><br />
+          <input type="text" id="nome" name="nome" /><br /><br />
+
+          <label for="nascimento">Data de Nascimento:</label><br />
+          <input type="date" id="nascimento" name="nascimento" /><br /><br />
+
+          <label for="email">E-mail:</label><br />
+          <input type="email" id="email" name="email" /><br /><br />
+
+          <label for="celular">Celular:</label><br />
+          <input
+            type="tel"
+            id="celular"
+            name="celular"
+            placeholder="19-99122-8877"
+          /><br /><br />
+
+          <label for="mensagem">Mensagem:</label><br />
+          <textarea id="mensagem" name="mensagem" rows="5"></textarea
+          ><br /><br />
+
+          <button type="reset">Limpar</button>
+          <button type="submit">Enviar sua mensagem</button>
+        </form>
+      </div>
+    </div>
+    <div id="footer">
+      <a style="margin-left: 10px" href="Contato.html">Contato</a>
+    </div>
+  </body>
+</html>

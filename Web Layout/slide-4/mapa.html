@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa</title>
+    <!-- Author: Guilherme de Souza Dionisio Rosseti BV3032019-->
+    <!-- Data da implementação: 04/04/2025 -->
+  </head>
+  <body>
+    <div id="header">
+      <h1>Mapa</h1>
+      <div id="nav"></div>
+    </div>
+
+    <div id="main">
+      <div id="section">
+        <dl>
+          <dt><a href="index.html">Esportes</a></dt>
+          <dd>Beneficios da Pratica de Esportes</dd>
+        </dl>
+        <dl>
+          <dt>Mapa</dt>
+          <dd>Esta página</dd>
+        </dl>
+        <dl>
+          <dt><a href="contato.html">Contato</a></dt>
+          <dd>Informações sobre o autor</dd>
+        </dl>
+      </div>
+      <div id="figure"></div>
+    </div>
+
+    <div id="footer">
+      <a href="index.html">Esportes</a>
+      <a href="contato.html">Contato</a>
+    </div>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #1f1d2e;
+        color: rgb(224, 222, 244);
+      }
+      div#header {
+        background-color: rgb(235, 111, 146);
+        color: rgb(224, 222, 244);
+        padding: 15px;
+        text-align: center;
+      }
+      div#section {
+        max-width: 50%;
+        float: left;
+        padding: 10px;
+      }
+      dl dt {
+        font-weight: bold;
+        color: rgb(224, 222, 244);
+        margin-top: 10px;
+      }
+      dl dd {
+        margin-left: 20px;
+        color: rgb(224, 222, 244);
+      }
+      div#footer {
+        clear: both;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #191724;
+        text-align: center;
+        padding: 10px;
+        color: rgb(224, 222, 244);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      #footer a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+      }
+      #footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </body>
+</html>

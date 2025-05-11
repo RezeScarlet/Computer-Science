@@ -1,0 +1,120 @@
+/* 
+Author: Guilherme de Souza Dionisio Rosseti BV: 3032019 
+Data de Implementação: 10/05/2025 
+*/
+@import "./colors.css";
+html,
+body {
+  height: 100%;
+  margin: 0;
+  color: var(--rp-text);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header,
+footer {
+  background: var(--rp-surface);
+  text-align: center;
+  font-weight: bold;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.container {
+  display: flex;
+  flex: 1;
+}
+
+aside.left,
+aside.right {
+  background: var(--rp-overlay);
+  width: 150px;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+main {
+  background: var(--rp-base);
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+main p {
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+a {
+  color: var(--rp-foam);
+  text-decoration: none;
+}
+ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+form {
+  text-align: left;
+}
+
+input, textarea {
+  color: var(--rp-input-text);
+  background-color: var(--rp-input-bg);
+  border: 2px solid var(--rp-iris);
+  border-radius: 0.4rem;
+  padding: 8px;
+  margin-top: 4px;
+}
+
+button {
+  padding: 0.5rem;
+  border: 3px solid var(--rp-love);
+  border-radius: 0.4rem;
+}
+input[type="reset"] {
+  cursor: pointer;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  background: var(--rp-overlay);
+  color: var(--rp-text);
+  border: 3px solid var(--rp-love);
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  background: var(--rp-overlay);
+  color: var(--rp-text);
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  border: 3px solid var(--rp-pine);
+}
