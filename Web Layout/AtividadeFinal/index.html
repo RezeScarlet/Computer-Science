@@ -1,0 +1,87 @@
+<!--
+Author: Guilherme de Souza Dionisio Rosseti BV: 3032019 
+Data de Implementação: 21/06/2025 
+-->
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Marcação e Layout Web</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Marcação e Layout Web</h1>
+  </header>
+  <div class="container">
+    <aside class="left">
+      <h2>Exercícios</h2>
+      <ul>
+        <li><a href="Tags Basicas/MLW-1.html">Tags Basicas 1</a></li>
+        <li><a href="Tags Basicas/MLW-2.html">Tags Basicas 2</a></li>
+        <li><a href="Paginas/index.html">Páginas</a></li>
+        <li><a href="Links/index.html">Links</a></li>
+        <li><a href="Medias/mapa.html">Medias</a></li>
+        <li><a href="Planetas/index.html">Planetas</a></li>
+        <li><a href="Formulario Basico/Contato.html">Formulário Basico</a></li>
+        <li><a href="Layout/AtAula06L1.html">Layout 1</a></li>
+        <li><a href="Layout/AtAula06L2.html">Layout 2</a></li>
+        <li><a href="Layout/AtAula06L3.html">Layout 3</a></li>
+        <li><a href="Formularios/form1.html">Formulário CSS</a></li>
+        <li><a href="Formularios/form2.html">Formulário Responsivo</a></li>
+        <li><a href="Formularios/form3.html">Formulário Bootstrap</a></li>
+        <li><a href="Prova1Ex1/index.html">Prova 1 Ex 1</a></li>
+        <li><a href="Prova1Ex2/ContatosResponsivo.html">Prova 1 Ex 2</a></li>
+        <li><a href="AtividadeFinal/index.html">Atividade Final</a></li>
+      </ul>
+    </aside>
+    <main>
+      <br>
+      <br>
+      <h2>Atividade Final: JavaScript</h2>
+      <h3>1. Exercício 8: Encontrar String por Posição</h3>
+      <form>
+        <label for="campoPosicao">Digite um número (0-10):</label>
+        <input type="number" id="campoPosicao" min="0" max="10">
+        <button type="button" onclick="exibirStringDaPosicao()">Mostrar String</button>
+        <p id="resultadoEx8"></p>
+      </form>
+
+      <hr>
+
+      <h3>2. Exercício 9: Comparar Textos</h3>
+      <form>
+        <label for="campoTexto1">Texto 1:</label>
+        <input type="text" id="campoTexto1"><br><br>
+        <label for="campoTexto2">Texto 2:</label>
+        <input type="text" id="campoTexto2"><br><br>
+        <button type="button" onclick="verificarTextos()">Verificar Textos</button>
+        <p id="mensagemValidacaoEx9"></p>
+      </form>
+
+      <hr>
+
+      <h3>3. Exercício 10: Validação de Login</h3>
+      <form>
+        <label for="campoLogin">Login:</label>
+        <input type="text" id="campoLogin"><br><br>
+        <label for="campoSenha">Senha:</label>
+        <input type="password" id="campoSenha"><br><br>
+        <button type="button" onclick="validarLogin()">Entrar</button>
+        <p id="mensagemLoginEx10"></p>
+      </form>
+
+      <script src="../bv3032019-ex8.js"></script>
+      <script src="../bv3032019-ex9.js"></script>
+      <script src="../bv3032019-ex10.js"></script>
+    </main>
+  </div>
+  <footer>
+    <p>Autor: <span title="Clarisse >:3">Guilherme Rosseti</span></p>
+    <a href="index.html">Inicio</a>
+  </footer>
+</body>
+
+</html>

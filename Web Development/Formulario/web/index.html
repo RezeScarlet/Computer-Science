@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Formulário</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <h1>Formulário</h1>
+
+  <form action="processaDadosCliente" method="POST">
+    <label for="nome">Nome: </label>
+    <input type="text" name="nome" size="20" id="nome">
+    <br>
+
+    <label for="sobrenome">Sobrenome: </label>
+    <input type="text" name="sobrenome" size="20" id="sobrenome">
+    <br>
+
+    <label for="cpf">CPF: </label>
+    <input type="text" name="cpf" size="20" id="cpf">
+    <br>
+
+    <label for="data">Data de nascimento: </label>
+    <input type="date" name="data" size="20" id="data">
+    <br>
+
+    <label for="genero">Gênero: </label>
+    <input type="radio" name="genero" value="F" id="genero"> Feminino
+    <input type="radio" name="genero" value="M" id="genero"> Masculino
+    <input type="radio" name="genero" value="NB" id="genero"> Não Binário
+    <input type="radio" name="genero" value="AG" id="genero"> Agênero
+    <input type="radio" name="genero" value="FL" id="genero"> Fluído
+    <br>
+
+    <label for="observacoes">Observações: </label>
+    <br>
+    <textarea rows="10" cols="40" name="observacoes" id="observacoes"></textarea>
+    <br>
+
+    <input type="submit" name="enviar" value="Enviar Dados">
+  </form>
+</body>
+
+</html>

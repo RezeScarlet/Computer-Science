@@ -1,0 +1,132 @@
+<!--
+Author: Guilherme de Souza Dionisio Rosseti BV: 3032019 
+Data de Implementação: 15/05/2025 
+-->
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Layout 3</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      main {
+        padding: 1rem;
+      }
+
+      .section {
+        margin-bottom: 1rem;
+      }
+
+      .row {
+        gap: 14%;
+        margin-bottom: 1rem;
+      }
+
+      .half-width {
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+      }
+
+      /* label { */
+      /*   display: block; */
+      /*   margin-bottom: 0.3rem; */
+      /*   font-weight: bold; */
+      /* } */
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.5rem;
+      }
+
+      textarea {
+        resize: vertical;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+      }
+
+    @media (max-width: 991px) {
+      aside.left,
+      aside.right,
+      main {
+        display: block;
+        width: 100%;
+      }
+
+      .half-width {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <header><h1>Marcação e Layout Web</h1></header>
+    <div class="layout-container">
+      <aside class="left">
+        <h2>Exercícios</h2>
+        <ul>
+          <li><a href="form1.html">Formulários</a></li>
+        </ul>
+      </aside>
+
+      <main>
+        <h2>Formulário</h2>
+        <form action="form.php" method="post">
+          <div class="row">
+            <div class="half-width">
+              <label for="name">Nome:</label>
+              <input type="text" id="name" name="name" />
+            </div>
+            <div class="half-width">
+              <label for="date">Data de Nascimento:</label>
+              <input type="date" id="date" name="date" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="half-width">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="half-width">
+              <label for="cellphone">Celular:</label>
+              <input type="tel" id="cellphone" name="cellphone" />
+            </div>
+          </div>
+
+          <div class="section">
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="6"></textarea>
+          </div>
+
+          <input type="reset" value="Limpar" />
+          <input type="submit" value="Enviar" />
+        </form>
+      </main>
+
+      <aside class="right">
+        <h2>Formulários</h2>
+        <ul>
+          <li><a href="form1.html">Formulário</a></li>
+          <li><a href="form2.html">Formulário Responsivo</a></li>
+          <li><a href="form3.html">Formulário Bootstrap</a></li>
+        </ul>
+      </aside>
+    </div>
+    <footer>
+      <p>Autor: <span title="Clarisse >:3">Guilherme Rosseti</span></p>
+      <a href="index.html">Inicio</a>
+    </footer>
+  </body>
+</html>
